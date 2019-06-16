@@ -16,7 +16,7 @@ atTime.prototype={
     //获取完整年月日
     var _str='';
     if (typeof parms !='string') {
-      throw console.error('getNowDate method input parmas type error!');
+      throw console.error('getNowDate method input parmas type error :yyyymmdd');
     }else {
       if (parms.indexOf('-')>0) {
         _str='-';

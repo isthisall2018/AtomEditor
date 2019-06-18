@@ -1,8 +1,14 @@
-function atTime() {
-
+function atTime(parmas) {
+  this.parmas=parmas;
+  this.getValue=function(){
+    return function () {
+      console.log(this,'8888');
+    }
+  }
 }
 atTime.prototype={
   getNowDate:function(parms){
+    console.log(this);
     var myDate = new Date();
     var year = myDate.getFullYear()+'';    //获取完整的年份(4位,1970-????)
     var month = myDate.getMonth()+1+'';       //获取当前月份(1-12)
